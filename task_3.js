@@ -26,7 +26,7 @@ console.log -ს რომ გადაცემთ ამ ფუნქცია
 
 
 
-function chessboard(space = " ", hash = "#") {
+function chessboard1(space = " ", hash = "#") {
     let c = space+hash
     let d = hash+space
     for (let i = 0; i < 2; i++) {
@@ -42,4 +42,18 @@ function chessboard(space = " ", hash = "#") {
     
 }
 
-console.log(chessboard(" ", "#"));
+console.log(chessboard1(" ", "#"));
+
+let size = 8;
+let chessboard = "";
+
+for (let i = 0; i < size; i++) {
+    for (let j = 0; j < size; j++) {
+       
+        chessboard += (i + j) % 2 === 0 ? " " : "#";
+    }
+    
+    chessboard += "\n";
+}
+
+console.log(chessboard);
