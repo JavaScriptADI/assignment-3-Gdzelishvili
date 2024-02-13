@@ -22,3 +22,24 @@ console.log -ს რომ გადაცემთ ამ ფუნქცია
  # # # #
 # # # # 
 */
+
+
+
+
+function chessboard(space = " ", hash = "#") {
+    let c = space+hash
+    let d = hash+space
+    for (let i = 0; i < 2; i++) {
+        c += c;
+    }
+    for (let i = 0; i < 2; i++) {
+        d += d;
+    }
+    for (let i = 0; i < 4; i++) {
+        console.log(c);
+        console.log(d);
+    }
+    
+}
+
+console.log(chessboard(" ", "#"));
