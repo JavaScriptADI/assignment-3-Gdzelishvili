@@ -12,3 +12,15 @@ So if you solved it, your labor market value just went up.)
 2. რიცხვები, რომლებიც იყობა 5 -ზე (და არა 3 -ზე), გამოიტანეთ "Buzz" რიცხვის მაგივრად.
 3. რიცხვები, რომლებიც იყოფა ორივეზე 3 -ზეც და 5 -ზეც გამოიტანეთ "FizzBuzz"
 */
+
+for (let i = 1; i <= 100; i++) {
+    if(i % 3 === 0 && i %  5 === 0){
+        console.log("FizzBuzz")
+    }else if(i %  3 === 0){
+        console.log("Fizz")
+    }else if(i %  5 === 0){
+        console.log("Buzz")
+    }else{
+        console.log(i)
+    }
+}
